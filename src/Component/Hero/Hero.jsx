@@ -27,7 +27,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="hero-content z-10 w-2/3"
+                className="hero-content z-10 lg:w-2/3 md:w-2/3 w-full"
             >
                 <h3>welcome fresheat</h3>
                 <h1>{herotitale[index]}</h1>
@@ -39,7 +39,7 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="hero-image z-10 w-1/3"
+                className="hero-image z-10 lg:w-1/3 md:w-1/3 sm:hidden hidden lg:block md:hidden w-full h-full"
             >
                 <img src={heroimage[index]} alt="hero1" loading='lazy' />
             </motion.div>

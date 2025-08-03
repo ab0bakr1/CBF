@@ -40,7 +40,7 @@ const Header2 = () => {
     <>
         <AnimatePresence>
             {shouldShowHeader && (
-                <motion.header key='header2' className='fixed top-0 left-0 w-full z-10 flex items-center justify-between lg:pe-8 md:pe-6 sm:pe-4 pe-2 header2 bg-white' initial={{opacity: 0, y: -80}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -80}} transition={{duration: 0.5, ease: 'easeInOut'}}>
+                <motion.header key='header2' className='fixed top-0 left-0 w-full z-20 flex items-center justify-between lg:pe-8 md:pe-6 sm:pe-4 pe-2 header2 bg-white' initial={{opacity: 0, y: -80}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -80}} transition={{duration: 0.5, ease: 'easeInOut'}}>
                     <div className="logo">
                         <img className="p-2" src={Logo} alt="Logo" loading='lazy' />
                     </div>

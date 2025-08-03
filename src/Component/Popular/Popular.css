@@ -1,0 +1,47 @@
+.popular h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f9e633;
+    margin-bottom: 0.5rem; 
+    text-transform: uppercase;
+}
+.popular h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.popular-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    width: 80%;
+    margin: 0 auto;
+}
+.popular-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    height: fill-available;
+    text-align: center;
+    gap: 15px;
+}
+.popular-item h3{
+    font-size:clamp(0.7rem,1.2vw,1.2rem);
+    font-weight:700;
+}
+.popular-item p{
+    font-size: clamp(0.6rem,1vw,1rem);
+    font-weight: 500;
+    color: #0000009b;
+    margin: 10px 0;
+}
+.popular-item span{
+    font-size: clamp(0.8rem,1.2vw,1.2rem);
+    font-weight: 700;
+    color: red;
+}

@@ -1,6 +1,7 @@
 .hero{
     background: url("https://cdn.pixabay.com/photo/2017/12/25/20/18/wall-3039071_960_720.jpg") no-repeat center center/cover;
-    height: 100vh;
+    min-height: 100svh;
+    width: fit-content;
     position: relative;
     display: flex;
     justify-content:space-between;
@@ -48,4 +49,9 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 150svh;
+    }
 }

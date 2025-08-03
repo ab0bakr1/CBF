@@ -19,12 +19,12 @@ const Hero = () => {
 
     }, []);
   return (
-    <main className="hero">
+    <main className="hero overflow-x-hidden">
         <AnimatePresence mode='wait'>
             <motion.div 
                 key={`text-${index}`}
                 initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="hero-content z-10 lg:w-2/3 md:w-2/3 w-full"

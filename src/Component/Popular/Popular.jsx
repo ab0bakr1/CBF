@@ -8,6 +8,7 @@ import Popular4 from '../../IMG/food4.png';
 import Popular5 from '../../IMG/food5.png';
 import { faBurger } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Spacial from './Spacial.jsx'
 
 
 
@@ -85,14 +86,14 @@ const Popular = () => {
 
 
   return (
-    <section className='popular lg:py-20 md:py-16 sm:py-12 py-8 text-center'>
+    <section className='popular lg:py-20 md:py-16 sm:py-12 py-8 text-center bg-slate-100'>
       <div className="container mx-auto">
         <h4><span><FontAwesomeIcon icon={faBurger} /></span>best food<span><FontAwesomeIcon icon={faBurger} /></span></h4>
         <h2>Popular food items</h2>
         <div className="popular-items">
           <AnimatePresence mode='popLayout'>
             {visibleItems.map((item, index) => (
-              <motion.div key={item.id} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0 }} layout className="popular-item lg:w-1/4 md:w-1/3 sm:w-full w-full py-4 px-8">
+              <motion.div key={item.id} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0 }} layout className="popular-item lg:w-1/4 md:w-1/3 sm:w-full w-full py-5 px-10">
                 <img src={item.image} alt={item.name} loading='lazy' className="w-full h-1/2" />
                 <div className="h-1/2">
                   <h3>{item.name}</h3>
@@ -104,6 +105,7 @@ const Popular = () => {
           </AnimatePresence>
         </div>
       </div>
+      <Spacial />
     </section>
 )
 }

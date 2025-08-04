@@ -45,3 +45,50 @@
     font-weight: 700;
     color: red;
 }
+
+/* spacial */
+
+.spacial-item{
+    background: url(https://cdn.pixabay.com/photo/2019/11/28/19/59/smoke-4659999_1280.jpg) no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+.spacial-item h4{
+    font-size: clamp(0.8rem,1.2vw,1.2rem);
+    font-weight: 700;
+    color: red;
+    margin-bottom: 0rem;
+}
+.spacial-item h2{
+    font-size: clamp(1.2rem,1.2vw,2rem);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem; 
+}
+.spacial-item p{
+    font-size: clamp(0.6rem,1vw,1rem);
+    font-weight: 500;
+    color: #f9e633;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+.spacial-item button{
+    font-size: clamp(0.6rem,1vw,1rem);
+    font-weight: 500;
+    color: #fff;
+    background-color: red;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.spacial-item button:hover{
+    outline:2px red solid;
+    background-color: black;
+}

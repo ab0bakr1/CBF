@@ -7,6 +7,9 @@ import Dishes4 from "../../IMG/Dishes3.png"
 import Dishes5 from "../../IMG/food3.png"
 import Dishes6 from "../../IMG/spicy.png"
 import Dishes7 from "../../IMG/spicy2.png"
+import { faEye, faHeart } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons/faCartArrowDown'
 
 const dishes = [
   {
@@ -50,13 +53,18 @@ const Dishes = () => {
     <section className='dishes relative py-10 bg-slate-100 text-center'>
         <h4>POPULAR DISHES</h4>
         <h2>Best selling Dishes</h2>
-        <div className="Dishes-item flex flex-wrap justify-center items-center">
+        <div className="Dishes-item flex flex-wrap justify-center items-center gap-10 md:px-10 sm:px-10 px-10">
           {dishes.map((dish) => (
-            <div className="Dishes-card lg:w-1/5 md:w-1/3 sm:w-1/2 w-1/2">
+            <div key={dish.id} className="Dishes-card lg:w-1/6 md:w-1/4 sm:w-1/3 w-full bg-orange-500">
               <img src={dish.image} alt="" />
               <h3>{dish.name}</h3>
               <h4>{dish.description}</h4>
               <p>${dish.price}</p>
+              <div className="icons absolute right-3 top-3">
+                <FontAwesomeIcon icon={faHeart} className='active' />
+                <FontAwesomeIcon icon={faCartArrowDown} />
+                <FontAwesomeIcon icon={faEye} />
+              </div>
             </div>
           ))}
         </div>

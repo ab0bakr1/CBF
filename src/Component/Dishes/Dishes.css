@@ -18,6 +18,7 @@
     animation: updown 2s ease-in-out infinite;
 }
 .Dishes-card{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,11 +28,18 @@
     text-align: center;
     padding: 20px;
     gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.Dishes-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background:url(https://cdn.pixabay.com/photo/2017/06/01/02/17/black-2362253_1280.jpg) no-repeat center center/cover;
 }
 .Dishes-card img{
     width: 200px;
     height: 200px;
-    padding: 10px;
+    padding: 20px;
 }
 .Dishes-card h3{
     font-size: 1.2rem;
@@ -52,6 +60,33 @@
     font-weight: 500;
     margin-bottom: 0.5rem;
     color: red;
+}
+.Dishes-card:hover h3,
+.Dishes-card:hover h4,
+.Dishes-card:hover p{
+    color: white;
+}
+.Dishes-card .icons{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    z-index: 2;
+}
+.Dishes-card .icons svg{
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.Dishes-card .icons svg:hover,
+.Dishes-card .icons svg.active{
+    background-color: red;
+    color: white;
 }
 .dishes button{
     font-size: clamp(0.6rem,1vw,1rem);

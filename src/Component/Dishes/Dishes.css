@@ -1,0 +1,87 @@
+.dishes h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f9e633;
+    margin-bottom: 0.5rem; 
+    text-transform: uppercase;
+}
+.dishes h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: black;
+    text-transform: capitalize;
+}
+.dishes>img{
+    width: 200px;
+    height: 120px;
+    animation: updown 2s ease-in-out infinite;
+}
+.Dishes-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    height: fill-available;
+    text-align: center;
+    padding: 20px;
+    gap: 5px;
+}
+.Dishes-card img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.Dishes-card h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: black;
+    text-transform: capitalize;
+}
+.Dishes-card h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 0.45);
+    text-transform: capitalize;
+}
+.Dishes-card p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: red;
+}
+.dishes button{
+    font-size: clamp(0.6rem,1vw,1rem);
+    font-weight: 500;
+    color: #fff;
+    background-color: red;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 50px;
+    transition: 0.3s ease;
+}
+.dishes button:hover{
+    outline:2px red solid;
+    background-color: black;
+}
+@keyframes updown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 900px) {
+    .dishes>img{
+        display: none !important;
+    }
+}

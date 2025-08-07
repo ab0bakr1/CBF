@@ -1,0 +1,84 @@
+.today{
+    background: url("https://cdn.pixabay.com/photo/2019/11/28/19/59/smoke-4659999_1280.jpg") no-repeat center center/cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 4rem 40px;
+}
+.today-text h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: red;
+    margin-bottom: 0.5rem; 
+    text-transform: uppercase;
+}
+.today-text h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.today-text p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #f9e633;
+    text-transform: capitalize;
+}
+.today-text button{
+    font-size: clamp(1rem,1vw,1.8rem);
+    font-weight: 500;
+    color: #fff;
+    background-color: red;
+    border: none;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.today-text button:hover{
+    outline:2px red solid;
+    background-color: black;
+}
+
+.today-img img{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    animation: any 10s linear infinite;
+}
+.today>img{
+    width: 200px;
+    height: 120px;
+    animation: updown 2s ease-in-out infinite;
+}
+@keyframes any{
+    0%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+@keyframes updown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 900px) {
+    .today>img{
+        display: none !important;
+    }
+}

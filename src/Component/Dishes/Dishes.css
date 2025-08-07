@@ -81,12 +81,20 @@
     padding: 5px;
     border-radius: 50%;
     cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
     transition: 0.3s ease;
 }
 .Dishes-card .icons svg:hover,
 .Dishes-card .icons svg.active{
     background-color: red;
     color: white;
+}
+.Dishes-card:hover .icons svg,
+.Dishes-card .icons svg.active{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
 }
 .dishes button{
     font-size: clamp(0.6rem,1vw,1rem);

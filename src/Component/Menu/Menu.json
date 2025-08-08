@@ -4,6 +4,79 @@
         "name":"Chinese Pasta",
         "image":"../../IMG/Dishes1.png",
         "price":10.99,
-        "description":"It's a testament to our."
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":2,
+        "name":"Egg and Cucumber",
+        "image":"../../IMG/Dishes1.png",
+        "price":46.89,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":3,
+        "name":"Chicken Fried Rice",
+        "image":"../../IMG/Dishes1.png",
+        "price":60.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":4,
+        "name":"Chicken White Rice",
+        "image":"../../IMG/Dishes1.png",
+        "price":70.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":5,
+        "name":"Chicken Pizza",
+        "image":"../../IMG/Dishes1.png",
+        "price":31.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":6,
+        "name":"Spatial Barger",
+        "image":"../../IMG/Dishes1.png",
+        "price":55.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":7,
+        "name":"Chicken Noodles",
+        "image":"../../IMG/Dishes1.png",
+        "price":85.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":8,
+        "name":"Vegetables Burger",
+        "image":"../../IMG/Dishes1.png",
+        "price":53.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":9,
+        "name":"Grilled Chicken",
+        "image":"../../IMG/Dishes1.png",
+        "price":30.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
+    },
+    {
+        "id":10,
+        "name":"Brief Chicken",
+        "image":"../../IMG/Dishes1.png",
+        "price":50.99,
+        "description":"It's a testament to our.",
+        "MenuType":"Fast Food"
     }
 ]

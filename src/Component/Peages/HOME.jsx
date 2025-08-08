@@ -6,6 +6,8 @@ import Popular from '../Popular/Popular'
 import About from '../About/About'
 import Dishes from '../Dishes/Dishes'
 import Today from '../Today/Today'
+import Menu from '../Menu/Menu'
+
 
 const HOME = () => {
   return (
@@ -17,6 +19,7 @@ const HOME = () => {
     <About />
     <Dishes />
     <Today />
+    <Menu />
     </>
 )
 }

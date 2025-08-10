@@ -2,18 +2,18 @@
     {
         "id":1,
         "name":"Chinese Pasta",
-        "image":"Dishes1.png",
+        "image":"Dishes4.png",
         "price":10.99,
         "description":"It's a testament to our.",
-        "MenuType":"Fast Food"
+        "MenuType":"Pasta"
     },
     {
         "id":2,
         "name":"Egg and Cucumber",
-        "image":"Dishes1.png",
+        "image":"Dishes3.png",
         "price":46.89,
         "description":"It's a testament to our.",
-        "MenuType":"Fast Food"
+        "MenuType":"breakfast"
     },
     {
         "id":3,
@@ -21,12 +21,12 @@
         "image":"Dishes1.png",
         "price":60.99,
         "description":"It's a testament to our.",
-        "MenuType":"Fast Food"
+        "MenuType":"breakfast"
     },
     {
         "id":4,
         "name":"Chicken White Rice",
-        "image":"Dishes1.png",
+        "image":"food3.png",
         "price":70.99,
         "description":"It's a testament to our.",
         "MenuType":"Fast Food"
@@ -34,15 +34,15 @@
     {
         "id":5,
         "name":"Chicken Pizza",
-        "image":"Dishes1.png",
+        "image":"Dishes2.png",
         "price":31.99,
         "description":"It's a testament to our.",
-        "MenuType":"Fast Food"
+        "MenuType":"Pizza"
     },
     {
         "id":6,
         "name":"Spatial Barger",
-        "image":"Dishes1.png",
+        "image":"spacial2.png",
         "price":55.99,
         "description":"It's a testament to our.",
         "MenuType":"Fast Food"
@@ -50,7 +50,7 @@
     {
         "id":7,
         "name":"Chicken Noodles",
-        "image":"Dishes1.png",
+        "image":"Dishes3.png",
         "price":85.99,
         "description":"It's a testament to our.",
         "MenuType":"Fast Food"
@@ -58,7 +58,7 @@
     {
         "id":8,
         "name":"Vegetables Burger",
-        "image":"Dishes1.png",
+        "image":"spacial3.png",
         "price":53.99,
         "description":"It's a testament to our.",
         "MenuType":"Fast Food"
@@ -66,17 +66,17 @@
     {
         "id":9,
         "name":"Grilled Chicken",
-        "image":"Dishes1.png",
+        "image":"food4.png",
         "price":30.99,
         "description":"It's a testament to our.",
         "MenuType":"Fast Food"
     },
     {
         "id":10,
-        "name":"Brief Chicken",
-        "image":"Dishes1.png",
+        "name":"Brief Pizza",
+        "image":"food2.png",
         "price":50.99,
         "description":"It's a testament to our.",
-        "MenuType":"Fast Food"
+        "MenuType":"Pizza"
     }
 ]

@@ -30,6 +30,7 @@
     align-items: center;
     flex-wrap: wrap;
     text-transform: capitalize;
+    margin: 20px 0;
 }
 .menu-card{
     display: flex;
@@ -63,4 +64,34 @@
     font-weight: 700;
     color: red;
     text-transform: capitalize;
+}
+
+.loop-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.loop-list {
+  display: inline-flex;
+  gap: 50px;
+  animation: scrollLoop 100s linear infinite;
+}
+
+.loop-list li {
+  font-size: 5rem;
+  font-weight: bold;
+  list-style: none;
+  color: #33333372;
+  text-transform: uppercase;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

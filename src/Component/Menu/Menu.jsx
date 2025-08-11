@@ -6,7 +6,7 @@ import {motion, AnimatePresence } from 'framer-motion'
 const Menu = () => {
   const [fillter, setFillter] = React.useState("all")
 
-  const category = ["all", "breakfast", "pizza", "pasta", "fast food"]
+  const category = ["all", "breakfast" , "pizza", "pasta", "fast food"]
   const filltered = fillter === "all" ? MenuJson : MenuJson.filter(item => item.MenuType.toLowerCase() === fillter.toLowerCase());
   const repeatedItems = [...MenuJson, ...MenuJson];
   return (

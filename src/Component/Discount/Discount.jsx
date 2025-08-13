@@ -1,27 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import './Discount.css'
+import DiscountImg from '../../IMG/spacial3.png'
 
 const Discount = () => {
+    const time = new Date("2026-12-31T23:59:59").getTime();
+    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = time - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            setTimeLeft({ days, hours, minutes, seconds });
+
+            if (distance < 0) {
+                clearInterval(interval);
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
   return (
-    <section>
-        <div className="Discount-img"></div>
-        <div className="Discount-info">
+    <section className='Discount'>
+        <div className="Discount-img w-1/2">
+            <img src={DiscountImg} alt="DiscountImg" className='w-full h-full' loading='lazy' />
+        </div>
+        <div className="Discount-info bg-gray-700 px-10 py-16">
             <h4>Special Offer</h4>
             <h3>Get 30% Discount Every Item</h3>
             <div className="Discount-time">
                 <div className="time">
-                    <p></p>
+                    <p>{timeLeft.days}</p>
+                    <hr />
                     <span>days</span>
                 </div>
                 <div className="time">
-                    <p></p>
+                    <p>{timeLeft.hours}</p>
+                    <hr />
                     <span>hrs</span>
                 </div>
                 <div className="time">
-                    <p></p>
+                    <p>{timeLeft.minutes}</p>
+                    <hr />
                     <span>mins</span>
                 </div>
                 <div className="time">
-                    <p></p>
+                    <p>{timeLeft.seconds}</p>
+                    <hr />
                     <span>secs</span>
                 </div>
             </div>

@@ -18,6 +18,10 @@
     border-radius: 50% 50% 0 0px;
     outline: solid 20px #f9e5336f;
 }
+.Discount-img img{
+    padding: 2rem;
+    padding-bottom: 0;
+}
 .Discount-info{
     display: flex;
     flex-direction: column;
@@ -58,4 +62,18 @@
     background-color: #f9e633;
     color: #000;
     padding: 0.5rem 1rem;
+}
+.Discount-info .Discount-time .time p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.Discount-info .Discount-time .time span{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+@media (max-width: 1000px) {
+    .Discount-img{
+        display: none;
+    }
 }

@@ -28,10 +28,10 @@ const Discount = () => {
     }, []);
   return (
     <section className='Discount'>
-        <div className="Discount-img w-1/2">
+        <div className="Discount-img lg:w-1/2 md:hidden sm:hidden">
             <img src={DiscountImg} alt="DiscountImg" className='w-full h-full' loading='lazy' />
         </div>
-        <div className="Discount-info bg-gray-700 px-10 py-16">
+        <div className="Discount-info bg-stone-700 px-10 py-16">
             <h4>Special Offer</h4>
             <h3>Get 30% Discount Every Item</h3>
             <div className="Discount-time">

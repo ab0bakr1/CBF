@@ -1,0 +1,65 @@
+.Chefe h4{
+    font-size: 1.5rem;
+    color: #f9e633;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.Chefe h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+}
+.Chefes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 40px;
+}
+.Chef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 250px;
+    text-align: center;
+    padding: 20px 40px;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 50% 50% 0px 0px;
+    margin-top: 200px;
+}
+.Chefe .Chef img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 40% 40% 40% 0px;
+    border-bottom: solid 5px red;
+    background-color: linear-gradient(to right, #f9e633, #000000);
+}
+.Chefe h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: capitalize;
+}
+.Chefe p{
+    font-size: 1rem;
+    color: #0000006b;
+    margin-bottom: 10px;
+}
+.Chefe .chefup{
+    width: 300px;
+    height: 150px;
+    animation: updown 2s infinite;
+}
+@keyframes updown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}

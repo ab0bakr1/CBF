@@ -1,0 +1,106 @@
+.backimg{
+    background: url(https://cdn.pixabay.com/photo/2015/07/07/09/50/teppanyaki-834149_1280.jpg) no-repeat left center;
+    background-size: cover;
+    width: 60%;
+    height: 100vh;
+    z-index: -1;
+    border-radius: 0% 50% 0% 0%;
+}
+.Test-info{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+    padding: 40px 0;
+}
+.Test-info h4{
+    color: #f9e633;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.Test-info h2{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.Test-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255);
+    padding: 50px;
+    border-radius: 10px;
+    gap: 20px;
+    width: 100%;
+    border-top : 10px solid #f9e633;
+}
+.Test-card img {
+  width: 6rem;      
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;  
+}
+.Test-card h5{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.Test-card p{
+    color: #00000075;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Test-card h6{
+    color: #00000075;
+    font-size: 1.5rem;
+}
+.left-right button{
+    background-color: transparent;
+    border: solid 2px #f9e633;
+    color: #f9e633;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.left-right button:hover{
+    background-color: #fff;
+    color: #000;
+    border: #fff solid 2px;
+}
+@media (max-width: 1200px){
+    .Test-info{
+        width: 80%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        gap: 10px;
+    }
+    .Test-card{
+        width: 80%;
+    }
+}
+@media (max-width:980px){
+    .backimg{
+        width: 100%;
+    }
+    .Test-info{
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 10px;
+    }
+    .Test-card{
+        width: 90%;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "role": "Web Developer",
+        "image": "https://cdn.pixabay.com/photo/2015/01/31/18/17/arabs-618749_1280.jpg",
+        "testimonial": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem officiis magni amet, soluta assumenda dolorum nostrum obcaecati quibusdam omnis quasi!",
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "role": "Graphic Designer",
+        "image": "https://cdn.pixabay.com/photo/2016/11/29/09/42/woman-1866860_1280.jpg",
+        "testimonial": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem officiis magni amet, soluta assumenda dolorum nostrum obcaecati quibusdam omnis quasi!",
+        "rating": 5
+    },
+    {
+        "id": 3,
+        "name": "Alice Johnson",
+        "role": "Project Manager",
+        "image": "https://cdn.pixabay.com/photo/2016/11/29/09/42/woman-1866860_1280.jpg",
+        "testimonial": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem officiis magni amet, soluta assumenda dolorum nostrum obcaecati quibusdam omnis quasi!",   
+        "rating": 5
+    }
+]

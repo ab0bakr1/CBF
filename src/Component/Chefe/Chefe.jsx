@@ -28,7 +28,7 @@ const Chefe = () => {
                 <p>Chef Assistant</p>
             </div>
         </div>
-        <img src={img} alt="" loading='lezy' className='absolute top-0 left-0 chefup' />
+        <img src={img} alt="" loading='lezy' className='absolute top-0 left-0 chefup lg:block md:hidden hidden' />
     </section>
   )
 }

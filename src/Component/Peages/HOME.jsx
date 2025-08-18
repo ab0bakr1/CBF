@@ -9,6 +9,7 @@ import Today from '../Today/Today'
 import Menu from '../Menu/Menu'
 import Discount from '../Discount/Discount'
 import Chefe from '../Chefe/Chefe'
+import Testimonials from '../Testimonials/Testimonials'
 
 
 const HOME = () => {
@@ -24,6 +25,7 @@ const HOME = () => {
     <Menu />
     <Discount />
     <Chefe />
+    <Testimonials />
     </>
 )
 }

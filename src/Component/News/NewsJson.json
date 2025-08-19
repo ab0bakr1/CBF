@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "date": {
+            "month": "Dec",
+            "day": 1
+        },
+        "title": "Benefits of health and safety measures",
+        "content": "We are excited to announce the release of several new features that enhance user experience and functionality. Check them out in our latest update!",
+        "author": "Jane Doe",
+        "category": "Updates",
+        "images": [
+            "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_2.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_3.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "date": {
+            "month": "Dec",
+            "day": 15
+        },
+        "title": "Benefits of health and safety measures",
+        "content": "Last weekend's community event was a great success! We had a wonderful turnout and many engaging activities. Thank you to everyone who participated!",
+        "author": "John Smith",
+        "category": "Events",
+        "images": [
+            "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_2.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_3.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "date": {
+            "month": "Jan",
+            "day": 30
+        },
+        "title": "Benefits of health and safety measures",
+        "content": "We are thrilled to announce the addition of a new recipe to our menu! Check it out and let us know what you think!",
+        "author": "Alice Johnson",
+        "category": "Recipes",
+        "images": [
+            "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_2.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_3.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "date": {
+            "month": "Jan",
+            "day": 20
+        },
+        "title": "Benefits of health and safety measures",
+        "content": "We are committed to sustainability and have implemented several new initiatives to reduce our environmental impact. Learn more about our efforts!",
+        "author": "Bob Brown",
+        "category": "Sustainability",
+        "images": [
+            "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_2.jpg",
+            "https://gramentheme.com/html/fresheat/assets/img/blog/blogThumb3_3.jpg"
+        ]
+    }
+]

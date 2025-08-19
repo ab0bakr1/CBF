@@ -10,6 +10,8 @@ import Menu from '../Menu/Menu'
 import Discount from '../Discount/Discount'
 import Chefe from '../Chefe/Chefe'
 import Testimonials from '../Testimonials/Testimonials'
+import News from '../News/News'
+
 
 
 const HOME = () => {
@@ -26,6 +28,7 @@ const HOME = () => {
     <Discount />
     <Chefe />
     <Testimonials />
+    <News />
     </>
 )
 }

@@ -20,11 +20,15 @@
     width: 100%;
     margin: 0 auto;
 }
+.News-item:hover img{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
 .News-item h3{
     font-size: clamp(1rem, 1.3vw, 1.5rem);
     font-weight: 700;
     text-align: start;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .News-item .date{
     background-color: red;
@@ -37,16 +41,25 @@
     color: #fff;
     padding: 30px;
 }
-.News-item .author{
+.News-item .author,
+.News-item .category{
     display: flex;
     align-items: center;
     font-size: 1.1rem;
 }
-.News-item .author svg{
+.News-item svg{
     color : red;
     margin-right: 5px;
 }
 .News-item .author span{
     color: #000;
     font-weight: 700;
+}
+.News-item a{
+    color: #0000006f;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+.News-item a:hover{
+    color: red;
 }

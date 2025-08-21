@@ -7,8 +7,8 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faTableList } from '@fortawesome/free-solid-svg-icons';
 
 const News = () => {
-   const [startIndex, setStartIndex] = useState(0);
-    const [itemCount, setItemCount] = useState(1);
+  const [startIndex, setStartIndex] = useState(0);
+  const [itemCount, setItemCount] = useState(1);
   
     const UItemCount = () => {
       const width = window.innerWidth;
@@ -47,7 +47,7 @@ const News = () => {
           {visibleItems.map((item) => (
             <motion.div key={item.id} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0 }} layout className="News-item lg:w-1/3 md:w-1/2 sm:w-full w-full py-5 px-10">
               <img src={item.images[0]} alt={item.name} loading='lazy' className="w-full h-1/2" />
-              <div className="h-1/2 p-5">
+              <div className="h-1/2 p-5 bg-white">
                 <div className="flex justify-between items-center">
                   <div className="date">
                     <span>{item.date.day}</span>
@@ -59,7 +59,7 @@ const News = () => {
                   </div>
                   <div className="category">
                     <FontAwesomeIcon icon={faTableList} />
-                    <span>{item.category}</span>
+                    <p>{item.category}</p>
                   </div>
                 </div>
                 <h3>{item.title}</h3>

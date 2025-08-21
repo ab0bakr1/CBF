@@ -11,6 +11,7 @@ import Discount from '../Discount/Discount'
 import Chefe from '../Chefe/Chefe'
 import Testimonials from '../Testimonials/Testimonials'
 import News from '../News/News'
+import Show from '../Show/Show'
 
 
 
@@ -29,6 +30,7 @@ const HOME = () => {
     <Chefe />
     <Testimonials />
     <News />
+    <Show/>
     </>
 )
 }

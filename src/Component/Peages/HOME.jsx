@@ -12,6 +12,7 @@ import Chefe from '../Chefe/Chefe'
 import Testimonials from '../Testimonials/Testimonials'
 import News from '../News/News'
 import Show from '../Show/Show'
+import Footer from '../Footer/Footer'
 
 
 
@@ -31,6 +32,7 @@ const HOME = () => {
     <Testimonials />
     <News />
     <Show/>
+    <Footer />
     </>
 )
 }

@@ -4,6 +4,7 @@ import Logo from '../../IMG/Logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavMobile = ( { isNavMobile, toggleNavMobile } ) => {
   return (
@@ -18,12 +19,12 @@ const NavMobile = ( { isNavMobile, toggleNavMobile } ) => {
         </div>
         <div className="nav">
             <ul className='flex flex-col space-y-4 text-gray-800'> 
-                <li><a href="/HOME">Home</a></li>
-                <li><a href="/">about us</a></li>
-                <li><a href="/">shop</a></li>
-                <li><a href="/">chif</a></li>
-                <li><a href="/">blog</a></li>
-                <li><a href="/">contact us</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">about us</Link></li>
+                <li><Link to="/shop">shop</Link></li>
+                <li><Link to="/">chif</Link></li>
+                <li><Link to="/blog">blog</Link></li>
+                <li><Link to="/">contact us</Link></li>
             </ul>
         </div>
         <div className="contact">

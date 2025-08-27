@@ -2,6 +2,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion,AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,20 +26,20 @@ const Navbar = () => {
     <nav className='flex justify-between items-center'>
       <ul className='flex lg:space-x-6 md:space-x-4 sm:space-x-2 space-x-0 text-white'>
         <li>
-          <a href="/HOME">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/">about us</a>
+          <Link to="/about">about us</Link>
         </li>
         <div className="relative group" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
           <li>
-            <a href="/">shop <FontAwesomeIcon icon={faPlus} /></a>
+            <Link to="/shop">shop <FontAwesomeIcon icon={faPlus} /></Link>
           </li>
           <AnimatePresence>
             {isOpen && (
               <motion.ul key="dropdown" variants={dropdown} initial="hidden" animate="visible" exit="exit" className="absolute top-full left-0 bg-white dropdown shadow">
                 <li className="py-2 px-4">
-                  <a href="/">Shop</a>
+                  <Link to="/shop">Shop</Link>
                 </li>
                 <li className="py-2 px-4">
                   <a href="/">shop right sidebar</a>
@@ -74,7 +75,7 @@ const Navbar = () => {
               <motion.ul key="dropdown" variants={dropdown} initial="hidden" animate="visible" exit="exit" className="absolute top-full left-0 bg-white dropdown shadow">
                 <div className='relative group' onMouseEnter={() => setIsOpen22(true)} onMouseLeave={() => setIsOpen22(false)}>
                   <li className="py-2 px-4">
-                    <a href="/">chif <FontAwesomeIcon icon={faPlus} /></a>
+                    <Link to="/chef">chef <FontAwesomeIcon icon={faPlus} /></Link>
                   </li>
                   <AnimatePresence>
                     {isOpen22 && (
@@ -93,7 +94,7 @@ const Navbar = () => {
                   </AnimatePresence>
                 </div>
                 <li className="py-2 px-4">
-                  <a href="/">food menu</a>
+                  <Link to="/shop">food menu</Link>
                 </li>
                 <li className="py-2 px-4">
                   <a href="/">gallery</a>
@@ -122,7 +123,7 @@ const Navbar = () => {
         </div>
         <div className="relative group" onMouseEnter={() => setIsOpen3(true)} onMouseLeave={() => setIsOpen3(false)}>
           <li>
-            <a href="/">blog <FontAwesomeIcon icon={faPlus} /></a>
+            <Link to="/blog">blog <FontAwesomeIcon icon={faPlus} /></Link>
           </li>
           <AnimatePresence>
             {isOpen3 && (

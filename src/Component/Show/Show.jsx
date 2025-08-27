@@ -60,7 +60,7 @@ export default function Show() {
           <div
             key={`${item.id}-${i}`}
             // لا تستخدم gap على الكونتينر، خلي المسافة داخل العنصر نفسه
-            className="flex-shrink-0 basis-1/2 md:basis-1/4 lg:basis-1/6 p-2"
+            className="flex-shrink-0 basis-1/2 md:basis-1/4 lg:basis-1/6 px-2"
           >
             <div
               className="show-item h-64 shadow bg-center bg-cover"

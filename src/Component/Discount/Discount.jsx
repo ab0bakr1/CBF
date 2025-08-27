@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Discount.css'
 import DiscountImg from '../../IMG/spacial3.png'
+import { faBurger } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Discount = () => {
     const time = new Date("2026-12-31T23:59:59").getTime();
@@ -32,7 +34,7 @@ const Discount = () => {
             <img src={DiscountImg} alt="DiscountImg" className='w-full h-full' loading='lazy' />
         </div>
         <div className="Discount-info bg-stone-700 px-10 py-16">
-            <h4>Special Offer</h4>
+            <h4><span><FontAwesomeIcon icon={faBurger} /></span>Special Offer<span><FontAwesomeIcon icon={faBurger} /></span></h4>
             <h3>Get 30% Discount Every Item</h3>
             <div className="Discount-time">
                 <div className="time">

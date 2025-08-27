@@ -2,6 +2,8 @@ import React from 'react'
 import MenuJson from "./MenuJson.json"
 import "./Menu.css"
 import {motion, AnimatePresence } from 'framer-motion'
+import { faBurger } from '@fortawesome/free-solid-svg-icons/faBurger'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Menu = () => {
   const [fillter, setFillter] = React.useState("all")
@@ -13,7 +15,7 @@ const Menu = () => {
     <>
     <section className='lg:p-20 md:p-10 sm:p-5 p-5 bg-slate-100'>
       <div className="menu text-center lg:p-10 md:p-10 sm:p-5 p-2 bg-white rounded-3xl">
-        <h4>FOOD MENU</h4>
+        <h4><span><FontAwesomeIcon icon={faBurger} /></span>FOOD MENU<span><FontAwesomeIcon icon={faBurger} /></span></h4>
         <h2>Fresheat Foods Menu</h2>
         <ul className="fillter flex justify-center items-center flex-wrap lg:gap-20 md:gap-10 sm:gap-5 gap-5 mb-5">
           {category.map((item) => (

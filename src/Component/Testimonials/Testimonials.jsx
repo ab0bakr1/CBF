@@ -1,4 +1,4 @@
-import { faArrowLeft, faArrowRight, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, faBurger, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import './Testimonials.css'
@@ -22,7 +22,7 @@ const Testimonials = () => {
     <section className="bg-zinc-900 relative">
         <div className="backimg"></div>
         <div className="Test-info">
-            <h4 className='text-center'>Testimonials</h4>
+            <h4 className='text-center'><span><FontAwesomeIcon icon={faBurger} /></span>Testimonials<span><FontAwesomeIcon icon={faBurger} /></span></h4>
             <h2 className='text-center'>What Our Customers Say</h2>
             <div className="flex justify-center overflow-hidden">
                 <AnimatePresence mode='wait'>

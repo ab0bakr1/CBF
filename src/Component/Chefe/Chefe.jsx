@@ -4,12 +4,14 @@ import chef1 from "../../IMG/chef1.png"
 import chef2 from "../../IMG/chef2.png"
 import chef3 from "../../IMG/chef3.png"
 import img from "../../IMG/chefup.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBurger } from '@fortawesome/free-solid-svg-icons'
 
 
 const Chefe = () => {
   return (
     <section className="Chefe bg-slate-100 py-20 relative">
-        <h4>OUR CHEFE</h4>
+        <h4><span><FontAwesomeIcon icon={faBurger} /></span>OUR CHEFES<span><FontAwesomeIcon icon={faBurger} /></span></h4>
         <h2>Meet Our Expert Chefe</h2>
         <div className="Chefes">
             <div className="Chef">

@@ -10,6 +10,7 @@ import Dishes7 from "../../IMG/spicy2.png"
 import { faEye, faHeart } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons/faCartArrowDown'
+import { faBurger } from '@fortawesome/free-solid-svg-icons/faBurger'
 
 const dishes = [
   {
@@ -51,7 +52,7 @@ const dishes = [
 const Dishes = () => {
   return (
     <section className='dishes relative py-10 bg-slate-100 text-center'>
-        <h4>POPULAR DISHES</h4>
+        <h4><span><FontAwesomeIcon icon={faBurger} /></span>POPULAR DISHES<span><FontAwesomeIcon icon={faBurger} /></span></h4>
         <h2>Best selling Dishes</h2>
         <div className="Dishes-item flex flex-wrap justify-center items-center gap-10 md:px-10 sm:px-10 px-10">
           {dishes.map((dish) => (

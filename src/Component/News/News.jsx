@@ -4,7 +4,7 @@ import './News.css';
 import NewsJson from './NewsJson.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { faTableList } from '@fortawesome/free-solid-svg-icons';
+import { faBurger, faTableList } from '@fortawesome/free-solid-svg-icons';
 
 const News = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -40,7 +40,7 @@ const News = () => {
     );  
   return (
     <section className='News text-center lg:py-20 md:py-8 sm:py-6 py-4 lg:px-10 md:px-8 sm:px-6 px-4'>
-      <h4>LATEST NEWS</h4>
+      <h4><span><FontAwesomeIcon icon={faBurger} /></span>LATEST NEWS<span><FontAwesomeIcon icon={faBurger} /></span></h4>
       <h2>Our Latest Foods News</h2>
       <div className="News-items">
         <AnimatePresence mode='popLayout'>
